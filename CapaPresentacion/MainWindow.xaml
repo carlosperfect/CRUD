@@ -1,0 +1,26 @@
+﻿<Window x:Class="CapaPresentacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CapaPresentacion"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dglista" HorizontalAlignment="Left" Height="354" Margin="348,10,0,0" VerticalAlignment="Top" Width="434" Loaded="dglista_Loaded"/>
+        <Label x:Name="Nombre" Content="Nombre" HorizontalAlignment="Left" Margin="19,19,0,0" VerticalAlignment="Top" AutomationProperties.Name="Nombre"/>
+        <TextBox x:Name="textnombre" HorizontalAlignment="Left" Height="23" Margin="107,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
+        <Label x:Name="Descripcion" Content="Descripcion" HorizontalAlignment="Left" Margin="19,46,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textdescri" HorizontalAlignment="Left" Height="23" Margin="107,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
+        <Label x:Name="Marca" Content="Marca" HorizontalAlignment="Left" Margin="19,74,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textmarca" HorizontalAlignment="Left" Height="23" Margin="107,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
+        <Label x:Name="Precio" Content="Precio" HorizontalAlignment="Left" Margin="19,102,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textprecio" HorizontalAlignment="Left" Height="23" Margin="107,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
+        <Label x:Name="Stock" Content="Stock" HorizontalAlignment="Left" Margin="19,130,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textstock" HorizontalAlignment="Left" Height="23" Margin="107,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
+        <Button x:Name="guardar" Content="Guardar" HorizontalAlignment="Left" Margin="19,178,0,0" VerticalAlignment="Top" Width="75" Click="guardar_Click"/>
+        <Button x:Name="editar" Content="Editar" HorizontalAlignment="Left" Margin="117,178,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.027,-0.2"/>
+        <Button x:Name="eliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="214,178,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
